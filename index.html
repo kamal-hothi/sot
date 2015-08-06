@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Data visualisation and Storytelling</h3>
+          <h3>Or, why information is beautiful</h3>
+          <h5>Principles and practice</h5>
+					<p>
+						<small><a href="www.nzherald.co.nz/Harkanwal-Singh/news/headlines.cfm?a_id=930" target="_blank">Harkanwal Singh</a> / <a href="http://twitter.com/kamal_hothi" target="_blank">@kamal_hothi</a></small>
+					</p>
+				</section>
+
+
+        <section>
+          <section>
+            <h3>Origins of data</h3>
+            <p>Data - 'something given'</p>
+            <p>Representation of information</p>
+          </section>
+          <section>
+            <blockquote cite="http://www.edwardtufte.com/tufte/books_vdqi" target="_blank">
+              Data graphics visually display measured quantities by means of the combined use of points, lines, a coordinate system, numbers, symbols, words, shading, and color.
+            </blockquote><small> ~ Edward Tufte, <a href="http://www.edwardtufte.com/tufte/books_vdqi" target="_blank">The Visual Display of Quantiative Information</a></small>
+          </section>
+        </section>
+
+        <section>
+
+          <section>
+            <h3>What we do, what inspires us and how it was originally done</h3>
+
+          </section>
+          <section>
+            <p>Using data as source to tell stories through data visualisation</p>
+            <p>We do <a href="http://www.nzherald.co.nz/Harkanwal-Singh/news/article.cfm?a_id=930&objectid=11447270" target="_blank">maps</a>, <a href="http://www.nzherald.co.nz/Harkanwal-Singh/news/article.cfm?a_id=930&objectid=11452541" target="_blank">visualisations</a> and <a href="http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=11207352" target="_blank">data investigations</a></p>
+            <small>@nzherald</small>
+          </section>
+
+          <section>
+            <h3>Show the data - Inspirations</h3>
+            <ul>
+              <li><a href="http://www.nytimes.com/interactive/2014/06/05/upshot/how-the-recession-reshaped-the-economy-in-255-charts.html?abt=0002&abg=1" target="_blank">Recession in 255 charts</a></li>
+              <li><a href="http://fivethirtyeight.com/interactives/the-complete-history-of-every-nba-team-by-elo/#warriors" target="_blank">NBA history</a></li>
+              <li><a href="http://www.nytimes.com/interactive/2014/09/19/nyregion/stop-and-frisk-map.html" target="_blank">Stop and Frisk Maps</a></li>
+              <li><a href="http://www.nytimes.com/interactive/2014/07/08/upshot/how-the-year-you-were-born-influences-your-politics.html" target="_blank">How birth year influences political views</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>The history</h3>
+            <ul>
+              <li><a href="https://www.wikiwand.com/en/William_Playfair" target="_blank">William Playfair</a></li>
+              <li><a href="https://www.wikiwand.com/en/Charles_Joseph_Minard" target="_blank">Charles Minard</a></li>
+              <li><a href="https://www.wikiwand.com/en/John_Snow_(physician)" target="_blank">John Snow(not Jon Snow)</a></li>
+              <li><a href="http://www.theguardian.com/news/datablog/2010/aug/13/florence-nightingale-graphics" target="_blank">Florence Nightingale(yes Florence Nightingale)</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Process, how you do it (@caleb_tutty)</h3>
+            <p>Source data</p>
+            <p>Explore it</p>
+            <p>Visualise it</p>
+          </section>
+
+          <section>
+            <h3>What makes a good visualisation (according to Tufte)</h3>
+            <ul>
+              <li>show the data</li>
+              <li>include the viewer to think about the substance rather than methodology, graphic design, etc</li>
+              <li>avoid distorting what the data has to say</li>
+              <li>encourage the eye to compare difference pieces of data</li>
+              <li>reveal the data at several levels of detail, from a broad overview to the fine structure</li>
+              <li>serve a reasonably clear purpose: description, exploration, tabulation, or decoration</li>
+              <li>be closely integrated with statistical and verbal descriptions</li>
+          </section>
+
+          <section>
+            <h3>Addendum - Tufte is not a god</h3>
+            <p>It's good practice but don't treat it as gospel</p>
+          </section>
+          </section>
+
+          <section>
+            <section>
+              <h3>Hans Rosling - the man who made stats sing</h3>
+              <small>One of my heroes</small>
+              <p><iframe width="420" height="315" src="https://www.youtube.com/embed/hVimVzgtD6w" frameborder="0" allowfullscreen></iframe></p>
+            </section>
+
+          </section>
+
+          <section>
+            <section>
+              <p>It's about finding a compelling story and then communicating it</p>
+              <p>You write code, you draw, you iterate and you get people to engage</p>
+              <p>A data story needs an audience</p>
+            </section>
+
+            <section>
+              <h3>Essentially - </h3>
+              <blockquote cite="http://bost.ocks.org/mike/algorithms/">
+                Visualization leverages the human visual system to augment human intellect: we can use it to better understand these important abstract processes, and perhaps other things, too.</blockquote> ~ Mike Bostock, <a href="http://bost.ocks.org/mike/algorithms/" target="_blank">Visualising Algorithms</a>
+            </section>
+
+            <section>
+              <h3>An interactive world</h3>
+              <p><a href="http://worrydream.com/LadderOfAbstraction/" target="_blank">Bret Victor</a></p>
+              <p><a href="http://bost.ocks.org/mike/" target="_blank">Mike Bostock</a></p>
+          </section>
+
+          <section>
+            <h3>Practicing interactive data visualisation</h3>
+            <p><strong><a href="http://explorableexplanations.com/">Create Explorable Explanations</a></strong></p>
+
+            <ul>
+              <li>Practice until your <emphasis>eyes</emphasis> can see it</li>
+              <li>"My work is more translation than design"</li>
+              <li>Try bad ideas deliberately</li>
+              <li>Shut up and look</li>
+              <li>You are too close to critique your own work well</li>
+            </ul>
+
+            <p> Sources - <a href="https://medium.com/@akarve/virtuoso-data-visualization-297cf7f858f6" target="_blank">one</a> and <a href="https://medium.com/@akarve/virtuoso-data-visualization-297cf7f858f6" target="_blank">two</a></p>
+        </section>
+
+        <section>
+          <h3>Lastly,</h3>
+            <p>Enjoy yourself, data visualisation is a creative and technical endeavour</p>
+            <p>You're creating representation of the real world and helping others understand it better</p>
+        </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
